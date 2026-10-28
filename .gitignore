@@ -1,0 +1,11 @@
+.venv/
+.n8n-runtime/
+.n8n-data/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+.env
+*.env
+!.env.example

@@ -1,0 +1,336 @@
+{
+  "summary": {
+    "tickets": 32,
+    "created": 32,
+    "failed_requests": 0,
+    "category_accuracy": 0.812,
+    "priority_accuracy": 0.812,
+    "escalation_precision": 1.0,
+    "escalation_recall": 0.625,
+    "flag_checks": "2/2",
+    "sensitive_text_leaks": "0/1",
+    "mean_seconds": 0.08
+  },
+  "rows": [
+    {
+      "id": "T01",
+      "category": "billing",
+      "priority": "High",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T02",
+      "category": "billing",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T03",
+      "category": "billing",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T04",
+      "category": "billing",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T05",
+      "category": "billing",
+      "priority": "High",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T06",
+      "category": "billing",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T07",
+      "category": "technical",
+      "priority": "High",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T08",
+      "category": "technical",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T09",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T10",
+      "category": "technical",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T11",
+      "category": "technical",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T12",
+      "category": "technical",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T13",
+      "category": "account",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T14",
+      "category": "account",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T15",
+      "category": "feature_request",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": false,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T16",
+      "category": "account",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T17",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": false,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T18",
+      "category": "feature_request",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T19",
+      "category": "feature_request",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T20",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": false,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T21",
+      "category": "feature_request",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T22",
+      "category": "account",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": false,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T23",
+      "category": "security",
+      "priority": "High",
+      "escalated": true,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T24",
+      "category": "security",
+      "priority": "High",
+      "escalated": true,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T25",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": false,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T26",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T27",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T28",
+      "category": "other",
+      "priority": "Low",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T29",
+      "category": "other",
+      "priority": "Medium",
+      "escalated": true,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T30",
+      "category": "billing",
+      "priority": "Medium",
+      "escalated": false,
+      "category_ok": true,
+      "priority_ok": true,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T31",
+      "category": "other",
+      "priority": "Low",
+      "escalated": true,
+      "category_ok": false,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    },
+    {
+      "id": "T32",
+      "category": "billing",
+      "priority": "Medium",
+      "escalated": true,
+      "category_ok": true,
+      "priority_ok": false,
+      "flags_ok": true,
+      "status_code": 201
+    }
+  ]
+}

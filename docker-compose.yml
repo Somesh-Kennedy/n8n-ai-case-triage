@@ -1,0 +1,29 @@
+# n8n plus the two mock services, for trying the workflow without any external accounts.
+# To use a real LLM and a real Salesforce org instead, drop the mock services and set the variables from .env.example.
+services:
+  mock-salesforce:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes: ["./mock_salesforce:/app/mock_salesforce:ro"]
+    command: python -m mock_salesforce.server --host 0.0.0.0 --port 8089
+    ports: ["8089:8089"]
+  mock-llm:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes: ["./mock_salesforce:/app/mock_salesforce:ro"]
+    command: python -m mock_salesforce.mock_llm --port 8090
+    ports: ["8090:8090"]
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    depends_on: [mock-salesforce, mock-llm]
+    ports: ["5678:5678"]
+    environment:
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"     # the workflow reads its settings from environment variables
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      LLM_BASE_URL: http://mock-llm:8090/v1
+      LLM_API_KEY: mock
+      LLM_MODEL: mock-llm
+      SF_INSTANCE_URL: http://mock-salesforce:8089
+      SF_ACCESS_TOKEN: mock-token
+    volumes: ["./workflows:/workflows:ro"]
+    entrypoint: ["sh", "-c", "n8n import:workflow --input=/workflows/case-triage.json && n8n publish:workflow --id=caseTriage0001; exec n8n start"]
